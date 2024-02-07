@@ -45,12 +45,12 @@ buttonElement.addEventListener('click',()=>{
     console.log(numResults, textResults);
 })
 
-const myPromise = new Promise((res,rej)=>{
+const myPromise = new Promise<string>((res,rej)=>{
     setTimeout(()=>{
-        res("It Worked!");
+        res("It worked!");
     },1000);
 });
 
-myPromise.then((result)=>{
-    console.log(result);
+myPromise.then((resultss)=>{
+    console.log(resultss.split('w'));
 })

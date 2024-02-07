@@ -30,9 +30,9 @@ buttonElement.addEventListener('click', () => {
 });
 const myPromise = new Promise((res, rej) => {
     setTimeout(() => {
-        res("It Worked!");
+        res("It worked!");
     }, 1000);
 });
-myPromise.then((result) => {
-    console.log(result);
+myPromise.then((resultss) => {
+    console.log(resultss.split('w'));
 });
