@@ -8,6 +8,10 @@ const textResults: string[] = [];
 type NumOrString = number | string;
 type Result = { val: number; timeStamp: Date};
 
+interface ResultObj {
+    val: number;
+    timeStamp:Date;
+}
 
 
 function add(num1: NumOrString,num2: NumOrString){
@@ -23,7 +27,7 @@ console.log(add(1,6));
 
 // console.log(add('1','6'));
 
-function printResult(resultObj: Result){
+function printResult(resultObj: ResultObj){
     console.log(resultObj.val);
 }
 
