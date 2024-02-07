@@ -16,6 +16,10 @@ console.log(add(1,6));
 
 // console.log(add('1','6'));
 
+function printResult(resultObj:{ val: number; timeStamp: Date}){
+    console.log(resultObj.val);
+}
+
 buttonElement.addEventListener('click',()=>{
     const num1 = num1Element.value;
     const num2 = num2Element.value;
@@ -25,5 +29,6 @@ buttonElement.addEventListener('click',()=>{
 
     console.log(result);
     console.log(stringResult);
+    printResult({val: result as number, timeStamp: new Date()});
     // console.log(add(true,false));
 })
